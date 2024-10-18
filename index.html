@@ -1,0 +1,70 @@
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color:#D0F0C0;
+    
+}
+h2{
+    text-align: center;
+    color: darkgreen;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    border: 3px  solid rgb(8, 2, 62);
+    text-align: center;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+
+    
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    background-color: #E3FEE9;
+}
+
+#counter {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#warning {
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Message</h2>
+        <p>Type your message below (200 characters max):</p>
+        <textarea id="message" rows="8" maxlength="200"></textarea>
+        <p id="counter">0/200 characters</p>
+        <p id="warning" class="hidden">You have reached the maximum character limit!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
